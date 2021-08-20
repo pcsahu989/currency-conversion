@@ -10,9 +10,13 @@
 	</parent>
 	<groupId>com.develop2learn</groupId>
 	<artifactId>currency-conversion</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<!-- Kubernetes Changes -->
+	<!--<version>0.0.1-SNAPSHOT</version>
 	<name>currency-conversion</name>
-	<description>Currency Conversion Service</description>
+	<description>Currency Conversion Service</description>-->
+	<version>0.0.13-SNAPSHOT</version>
+	<name>currency-conversion-kubernetes</name>
+	<description>Currency Conversion Kubernetes Service</description>
 	<properties>
 		<java.version>11</java.version>
 		<spring-cloud.version>2020.0.3</spring-cloud.version>
@@ -34,14 +38,15 @@
 			<groupId>io.github.resilience4j</groupId>
 			<artifactId>resilience4j-spring-boot2</artifactId>
 		</dependency>
-		<dependency>
+		<!-- Kubernetes Changes -->
+		<!--<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-config</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-		</dependency>
+		</dependency>-->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-openfeign</artifactId>
@@ -51,14 +56,15 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-sleuth</artifactId>
 		</dependency>
-		<dependency>
+		<!-- Kubernetes Changes -->
+		<!--<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-sleuth-zipkin</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.amqp</groupId>
 			<artifactId>spring-rabbit</artifactId>
-		</dependency>
+		</dependency>-->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
